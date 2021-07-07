@@ -1,0 +1,33 @@
+import java.util.*;
+public class Student {
+ int marks;
+ String std; 
+Student(){ 
+  Scanner sc=new Scanner(System.in);
+  System.out.println("Enter Student Name:");
+  std =sc.nextLine();
+  System.out.println("Enter Marks:");
+  marks =sc.nextInt();
+}
+void check(){
+    if (marks<30)
+    {System.out.println("" +std+ " Kindly apply for: Retake");}
+    
+     else if (marks>=30 && marks<39)
+    {System.out.println(""+std+"You have achieve a Supplementary");}
+     
+     else if (marks>=40 && marks<49)
+    {System.out.println("congratulations "+std+  ", you have: D");}
+     
+     else if (marks>=50 && marks<59)
+    {System.out.println("congratulations "+std+  ", you have: Pass");} 
+     
+     else if (marks>=60 && marks<69)
+    {System.out.println("congratulations "+std+  ", you have: Credit");}
+     
+     else if (marks>=70 && marks<79)
+    {System.out.println("congratulations "+std+  ", you have: Distinction");}
+     
+     else if (marks>=80 && marks<100)
+    {System.out.println("congratulations "+std+  ", you have: High Distinction");} 
+}}
